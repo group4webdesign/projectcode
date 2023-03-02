@@ -7,8 +7,8 @@ body {
       "footer footer";
     grid-template-rows: 80px 1fr 70px 70px;  
     grid-template-columns: 20% 1fr;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-row-gap: 5px;
+    grid-column-gap: 5px;
     height: 100vh;
     margin: 0;
     }  
@@ -18,15 +18,18 @@ body {
     }
   #pageHeader {
     grid-area: header;
+    background-image : url("images/picoLong.png");
     }
   #pageFooter {
     grid-area: footer;
     }
   #mainArticle { 
-    grid-area: article;      
+    grid-area: article;   
+    background-image : url("images/Eduardo.png");
     }
   #mainNav { 
     grid-area: nav; 
+    background-image : url("images/herdez.png");   
     }
   #siteAds { 
     grid-area: ads; 
