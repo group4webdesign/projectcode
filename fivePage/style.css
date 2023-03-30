@@ -1,0 +1,356 @@
+/* Navbar */
+.topnav {
+    overflow: hidden;
+    padding-left: 32vw;
+    background-color: #db4c4c;
+}
+.topnav a {
+    margin-left: 2vw;
+    float:left;
+    background-color: #db4c4c;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Sharable */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    background-color: #e8cece;
+    /*border: black 2px solid;*/
+}
+.red{
+    color: firebrick;
+}
+.ovalbutton{
+    background: firebrick;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.ovalbutton:hover{
+    background: transparent;
+    border: 2 solid firebrick;
+    cursor: pointer;
+
+}
+.flip-card {
+    float:left;
+    position: relative;
+    background-color: transparent;
+    width: 325px;
+    height: 325px;
+    perspective: 1000px;
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+.flip-card-back {
+    background-color: #db4c4c;
+    color:#ffffff;
+    text-align: center;
+    font-family: Didot;
+    transform: rotateY(180deg);
+}
+.flip-card-back p{
+    margin-top: 10px;
+    background-color: #db4c4c;
+}
+
+
+
+
+/* About Page */
+.about{
+    width: 100%;
+    padding: 78px 0px;
+}
+.about img{
+    height: auto;
+    max-width: 420px;
+    width: 50;
+    margin-right: 10px;
+}
+.about-text{
+    width: 50vw;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-text h1{
+  color: white;
+  font-size: 80px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+     text-transform: capitalize;
+     margin-bottom: 25px;
+     letter-spacing: 2px;
+  }
+.about-text p{
+    color: firebrick;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+/* Home Page */
+.Chucks{
+    margin-top: 8vh;
+    font-family: Didot;
+    height: 10;
+    position: absolute;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    width: 47vw;
+    font-size:80px;
+    text-align: center;
+    color: #db4c4c;
+}
+.rightSide{
+    width:49vw;
+    position: absolute;
+    margin-left: 50vw;
+    margin-top: 2vh;
+    margin-right: 1vw;
+    height: 90vh;
+}
+.copyright{
+    text-align: center;
+    font-size: smaller;
+    margin-left: 12vw;
+    position: absolute;
+    margin-top: 70vh;
+}
+
+/* News Page */
+.newsletter-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.picture {
+    width: 50%;
+    background: url("./images/news.png") no-repeat ;
+    background-size: cover;
+    margin-top: 80px;
+}
+
+.newsletter {
+    width: 50%;
+    padding: 200px 8%;
+}
+
+.newsletter h1 {
+    margin-bottom: 20px;
+    color: black;
+    font-weight: 900;
+}
+
+.newsletter p {
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: gray;
+}
+
+.newsletter-form {
+    height: 120px;
+    background-color: black;
+    border-radius: 3px;
+    display: flex;
+    padding: 8px 0;
+}
+.emailInput,.btn {
+    background: none;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    transition: .2s linear;
+}
+
+.emailInput {
+    width: calc(100% - 120px);
+    padding: 20px;
+    color: gray;
+}
+
+.emailInput::placeholder{
+    color: gray;
+}
+
+.emailInput:focus{
+    padding-left: 30px;
+}
+
+.btn {
+    width: 120px;
+    text-transform: uppercase;
+    color:gray;
+    cursor: pointer;
+    border-left: 1px solid #777;
+}
+
+.btn:hover {
+    color: whitesmoke;
+}
+
+/* Contact */
+section {
+    padding: 40px 15%;
+}
+
+.contact {
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 6rem;
+}
+
+.contact-img img {
+    max-width: 100%;
+    width: 720px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.contact-form h1 {
+    font-size: 65px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.contact-form p {
+    color: black;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+
+.contact-form form {
+    position: relative;
+}
+
+.contact-form form input, form textarea {
+    width: 100%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: white;
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 150px;
+}
+
+.contact-form form .btn {
+    display: inline-block;
+    background: #db4c4c;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+
+.contact-form form .btn:hover {
+    border: 2px solid #db4c4c;;
+    background: transparent;
+    transform: scale(1.1);
+}
+
+/* Learn */
+.Picante{
+    font-size: 25px;
+    padding-right: 12vw;
+    color: #db4c4c;
+    font-family: Didot;
+}
+
+#learn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.learnCard {
+    width: 30%;
+}
+
+.PicantePic{
+    margin: 10px;
+}
+
+.aboutPicante{
+    margin: 10px;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media */
+@media only screen and (max-width: 1600px) {
+    .learnCard {
+      width: 47%
+    }
+  }
+@media screen and (max-width: 1000px) {
+    .learnCard {
+        width: 97%
+    }
+  }
