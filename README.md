@@ -10,4 +10,5 @@ background page color:
 color: #e8cece;
 
 font type:
-font-family: Didot;
+font-family: didot; //for larger text
+font-family: trebuchet //smaller <p> text
