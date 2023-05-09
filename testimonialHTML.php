@@ -26,12 +26,15 @@
 <nav>
         <label class = "logo">Chucks Picante</label>
         <ul>
-            <li><a class="active" href = "homepage.html">Home</a></li>
-            <li><a href = "news.html">Newsletter</a></li>
+            <li><a href = "homePage.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "news.html">News</a></li>
             <li><a href = "faq.html">FAQ</a></li>
-            <li><a href = "careers.html">Careers</a></li>
+            <li><a href = "careers.html">Jobs</a></li>
             <li><a href = "environment.html">Environment</a></li>
             <li><a href = "learn.html">Learn</a></li>
+            <li><a href = "recipe.html">Recipes</a></li>
+            <li><a href = "contact.html">Contact</a></li>
         </ul>
         <label id = "icon">
             <i class="fas fa-bars"></i>
