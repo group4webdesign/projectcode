@@ -1,0 +1,121 @@
+body {
+    background-color: #e8cece;
+    font-family: Didot;
+  }
+
+  header {
+    background-color: rgb(207, 56, 56);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ffffff;
+  }
+  
+  p {
+    color: #ffffff;
+  }
+  
+  .testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .flip-card {
+    display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: #fff;
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .flip-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .flip-card p {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Navbar */
+.topnav {
+  overflow: hidden;
+  padding-left: 32vw;
+  background-color: #db4c4c;
+}
+.topnav a {
+  margin-left: 2vw;
+  float:left;
+  background-color: #db4c4c;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 14px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.container {
+  display: flex;
+  gap: 12px;
+
+  width: 97%;
+  background: #e8cece;
+  border-radius: 12px;
+  padding: 30px;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-padding: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.container .card {
+    max-width: 500px;
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgb(207, 56, 56);
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+article {
+  font-family: Arial, sans-serif;
+  color: #333;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+}
+article h3 {
+  padding: 40px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .card {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
