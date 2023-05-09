@@ -1,90 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chuck's Picante</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chuck's Picante</title>
+  <link rel="stylesheet" href="homePage3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="faq.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var icon = document.getElementById('icon');
+            var ul = document.querySelector('ul');
 
-    <link rel="stylesheet" href="style.css">
+            icon.addEventListener('click', function() {
+            ul.classList.toggle('show');
+            });
+        });
+    </script>
 </head>
 <body>
-    <!--creates navigation bar across the top of screen-->
-    <nav>
-      <label class = "logo">Chucks Picante</label>
-      <ul>
-          <li><a class="active" href = "homepage.html">Home</a></li>
-          <li><a href = "about.html">About</a></li>
-          <li><a href = "news.html">Newsletter</a></li>
-          <li><a href = "contact.html">Contact</a></li>
-          <li><a href = "faq.html">FAQ</a></li>
-      </ul>
-      <label id = "icon">
-          <i class="fas fa-bars"></i>
-      </label>
-  </nav>
+  <nav>
+    <label class = "logo">Chucks Picante</label>
+    <ul>
+        <li><a class="active" href = "#">Home</a></li>
+        <li><a href = "#">About</a></li>
+        <li><a href = "#">Newsletter</a></li>
+        <li><a href = "#">Contact</a></li>
+        <li><a href = "#">FAQ</a></li>
+    </ul>
+    <label id = "icon">
+        <i class="fas fa-bars"></i>
+    </label>
+</nav>
+<!--
+  <div class="topnav">
+    <a href="homePage2.html">Home</a>
+    <a href="newsletter.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="aboutChuck.html">About</a>
+  </div>
+-->
 
-    <!--create cards to seperate sections of home page-->
-    <div class="cards">
+<!-- Header -->
+<header class ="header">
+    <img src="Images/jarFlag.png" class="imgTop" alt="header image">
+  <div class="title">
+    <h1>Chuck's Picante</h1>
+  </div>
+</header>
 
-        <!--creates the title shown on screen-->
-        <div class="Chucks">
-            <h1><b>Chuck's Picante</b></h1>
-        </div>
+<div class="content">
+  <img src="Images/handHoldingJar.png" class="imgOnLeft" alt="hand and jar image">
+  
+  <div class="textRight">
+    <br>
+    <p> <span 
+      style="font-size: 80px; 
+      font-family: didot; 
+      font-weight: bold;
+      color:#000000;
+      background-color: #db4c4c;
+      padding: 2%;">Fresh Ingredients</span>
+      <br><br>
+      <span style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
+      'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> 
+      Chuck uses only the freshest ingredients
+      to create his picante. Gathered from local producers in the area, Chuck 
+      ensures his Picante is made from the best of the best.</span></p>
+  </div>
 
-        <!--creates the right side section of the screen where the flip cards are located-->
-        <div class="rightSide">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="./images/mild.png" alt="flip pic 1" style="width:325px; height:325px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1><b>Mild</b></h1> 
-                    <p>Cool, casual, flavorful. Perfect for those who enjoy a mild taste with just a hint of heat.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="./images/med.png" alt="flip pic 2" style="width:325px; height:325px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1><b>Medium</b></h1> 
-                    <p>A delicious blend of fresh tomatoes, onions, and peppers, with a moderate level of heat that adds a kick without overwhelming your taste buds.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="./images/hot.png" alt="flip pic 3" style="width:325px; height:325px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1><b>Hot</b></h1> 
-                    <p>A bold and spicy salsa with a fiery kick that will awaken your taste buds. Made with a blend of fresh and roasted peppers, this salsa is perfect for those who like their food with some heat.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img src="./images/diablo.png" alt="flip pic 4" style="width:325px; height:325px;">
-                  </div>
-                  <div class="flip-card-back">
-                    <h1><b>Diablo</b></h1> 
-                    <p>For the ultimate heat-seekers, this salsa packs a punch with a blend of the spiciest peppers, garlic, and spices. Not for the faint of heart, this salsa is sure to ignite your taste buds and leave you wanting more (if you can handle it!).</p>
-                  </div>
-                </div>
-              </div>
-        </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-        <!--creates the small text with our names on it under title-->
-        <div class="copyright">
-            <p>Created by Alex, Will, David, and Bobby. For Charlie and his salsa!</p>
-            <p>Web systems class 2023</p>
-        </div>
-    </div>
+  <div class="textLeft">
+    
+    <p> <span 
+      style="font-size: 80px; 
+      font-family: didot; 
+      font-weight: bold;
+      color:#000000;
+      background-color: #db4c4c;
+      padding: 2%;">Locally Made</span>
+      <br><br><span style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 
+      'Lucida Grande', 'Lucida Sans', Arial, sans-serif;"> 
+      Chuck hand produces every jar of his 
+      Picante right here in Eau Claire!  Locally made means less transportation, 
+      less negative environmental impacts, and better taste!
+    </span></p>
+  </div>
+
+  <img src="Images/jarFlagPortrait.png" class="imgOnRight" alt="jar and flag image">
+
+
+  <br><br><br><br><br><br><br><br><br>
+
+
+  <img src="Images/jarChuckFocused.png" class="imgOnLeft2" alt="chuck and jar image">
+  <div class="textRight2">
+
+    <br>
+    <p> <span 
+      style="font-size: 80px; 
+      font-family: didot; 
+      font-weight: bold;
+      color:#000000;
+      background-color: #db4c4c;
+      padding: 2%;">Delicioso!</span>
+      <br><br><span style="font-family: 'Trebuchet MS', 
+      'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+      What can we say, Chuck's Picante es 
+      delicioso! A great choice for a snack, parties, or potlucks, Chucks's Picante
+    has you covered with something everyone will like! </span></p>
+  </div>
+
+</div>
+
+<br><br><br><br><br><br><br><br><br>
+
+<footer class="footer">
+  <p>Created for Chuck's Picante. Created by David, Will, Alex, and Bobby. 
+    <br>
+    CS268 - Web Systems. 04/31/2023. 
+  </p>
+  <br><br><br><br>
+</footer>
+
 </body>
 </html>
