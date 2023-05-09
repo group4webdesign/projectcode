@@ -1,0 +1,72 @@
+.card{
+    flex: 1;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+    font-family: 'Playfair Display', serif;
+    border: #db4c4c solid 3px;
+}
+
+.card:nth-child(odd) .cardtop,
+.card:nth-child(even) .cardbot {
+    background-color: #db4c4c;
+    color: white;
+}
+
+.card:nth-child(even) .cardtop,
+.card:nth-child(odd) .cardbot {
+    background-color: #e8cece;
+}
+
+.card2{
+    flex: 1;
+    margin: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    word-wrap: break-word;
+    font-family: 'Playfair Display', serif;
+    border: #db4c4c solid 3px;
+}
+
+.card2:nth-child(odd) .cardtop,
+.card2:nth-child(even) .cardbot {
+    background-color: #e8cece;
+}
+
+.card2:nth-child(even) .cardtop,
+.card2:nth-child(odd) .cardbot {
+    background-color: #db4c4c;
+    color: white;
+}
+
+
+
+.cardtop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15.1%;  
+    font-size: 30px;
+}
+
+.cardbot{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 85%;  
+    font-size: 18px;
+    padding: 30px;
+}
+
+.recipeimg {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  @media (max-width: 1124px) {
+    .card,
+    .card2 {
+      flex-basis: calc(50% - 20px);
+    }
+  }
