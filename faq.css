@@ -1,20 +1,7 @@
 * {
-  margin:0;
-  padding:0; 
-  box-sizing: border-box;
   outline: none; 
-  border: none;
   text-decoration: none;
   list-style: none;
-}
-body{
-  background: #e8cece;
-  min-height: 100vh;
-}
-
-.container{
-  margin:20px auto;
-  max-width: 700px;
 }
 
 .container .heading{
@@ -26,6 +13,8 @@ body{
 
 .container .accordion-container{
   padding:0 20px;
+  margin:20px auto;
+  max-width: 700px;
 }
 
 .container .accordion-container .accordion{
