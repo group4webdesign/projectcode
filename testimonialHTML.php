@@ -31,6 +31,7 @@
             <li><a href = "faq.html">FAQ</a></li>
             <li><a href = "careers.html">Careers</a></li>
             <li><a href = "environment.html">Environment</a></li>
+            <li><a href = "learn.html">Learn</a></li>
         </ul>
         <label id = "icon">
             <i class="fas fa-bars"></i>
