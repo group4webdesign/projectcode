@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #e8cece;
+  }
+
+/* Add a red background color to the top navigation */
+.topnav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    padding-left: 32vw;
+    background-color: #db4c4c;
+    z-index: 1;
+    font-family: Didot;
+    font-weight: bold;
+}
+      
+
+/* Style the links in the nav bar */
+.topnav a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-left: 3vw;
+    float:left;
+    color: #000000;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+/* Changes the color of links when hovering */
+.topnav a:hover {
+    background-color: #e8cece;
+    color: black;
+}
+
+.title{
+    text-align: center;
+    font-size: 80px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-1 {
+    background-color: #e8cece;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-2 {
+    background-color: #e8cece;
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of a two-column layout */
+  @media (max-width: 800px) {
+    .flex-item-right, .flex-item-left {
+      flex: 100%;
+    }
+  }
