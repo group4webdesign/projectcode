@@ -7,15 +7,35 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='testimonials.css'>
     <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var icon = document.getElementById('icon');
+            var ul = document.querySelector('ul');
+
+            icon.addEventListener('click', function() {
+            ul.classList.toggle('show');
+            });
+        });
+    </script>
 </head>
 <body>
-<div class="topnav">
-        <a href="homepage.html">Home</a>
-        <a href="news.html">News</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-        <a href="learn.html">Learn</a>
-    </div>
+<nav>
+        <label class = "logo">Chucks Picante</label>
+        <ul>
+            <li><a class="active" href = "homepage.html">Home</a></li>
+            <li><a href = "news.html">Newsletter</a></li>
+            <li><a href = "faq.html">FAQ</a></li>
+            <li><a href = "careers.html">Careers</a></li>
+            <li><a href = "environment.html">Environment</a></li>
+        </ul>
+        <label id = "icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
 <header>
     <h1>Testimonials</h1>
     <p>See what other happy people are saying about Chucks's Picante:</p>
@@ -79,5 +99,28 @@ mysqli_close($conn);
     </form>
 </div>-->
 </main> 
+
+<section class="footer">
+        <div class="social">
+            <a href="https://instagram.com/charlie_.miller?igshid=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
+            <a href="https://t.snapchat.com/X9Lv35rz"><i class="fab fa-snapchat"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100027169909640"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        
+        <ul class="list">
+            <li>
+                <a href="homePage.html">Home</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="faq.html">FAQ</a>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>
