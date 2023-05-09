@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="faq.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var icon = document.getElementById('icon');
+            var ul = document.querySelector('ul');
+
+            icon.addEventListener('click', function() {
+            ul.classList.toggle('show');
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <label class = "logo">Chucks Picante</label>
+        <ul>
+            <li><a class="active" href = "homepage.html">Home</a></li>
+            <li><a href = "about.html">About</a></li>
+            <li><a href = "news.html">Newsletter</a></li>
+            <li><a href = "contact.html">Contact</a></li>
+            <li><a href = "faq.html">FAQ</a></li>
+            <li><a href = "careers.html">Careers</a></li>
+            <li><a href = "environment.html">Environment</a></li>
+        </ul>
+        <label id = "icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+
+<div class="container">
+    <h1 class="heading">Frequently Asked Questions</h1>
+    <div class="accordion-container">
+        <div class="accordion active">
+            <div class="accordion-heading">
+                <h3>Where do you get your Ingredients?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                As of right now, I obtain my produce from numerous local grocery stores. For a full time student, who works a full time job, it's tough for me to afford the best local produce. On the contrary, I hope to soon bring the most delicious ingredients to my people.
+            </p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>How long have you been making Salsa?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                I have been making salsa (Chucks picante) for almost a year now. Still in it's infancy. 
+            </p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>Where can I buy this Salsa?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                Talk to me personally. If you find me on campus, or under the contact info <a href="contact.html">here</a> 
+            </p>
+        </div>
+    </div>
+</div>
+
+<section class="footer">
+    <div class="social">
+        <a href="https://instagram.com/charlie_.miller?igshid=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i></a>
+        <a href="https://t.snapchat.com/X9Lv35rz"><i class="fab fa-snapchat"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100027169909640"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    
+    <ul class="list">
+        <li>
+            <a href="homePage.html">Home</a>
+        </li>
+        <li>
+            <a href="about.html">About</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+        <li>
+            <a href="faq.html">FAQ</a>
+        </li>
+    </ul>
+</section>
+
+<script>
+
+let accordions = document.querySelectorAll('.accordion-container .accordion');
+
+accordions.forEach(acco =>{
+    acco.onclick = () =>{
+        accordions.forEach(subAcco => { 
+            subAcco.classList.remove('active') 
+        });
+        acco.classList.add('active');
+    }
+})
+</script>
+
+</body>
+</html>
