@@ -54,20 +54,18 @@ So why not give us a try? We're confident that once you taste our salsas, you'll
 </h3>
 </article>
        <?php
-// Database connection parameters
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "testimonials";
 
-// Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
+
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
 }
 
-// Select four random testimonials from the database
+// get four random testimonials from the database
 $sql = "SELECT * FROM testimonials ORDER BY RAND() LIMIT 5";
 $result = mysqli_query($conn, $sql);
 
@@ -85,23 +83,10 @@ if (mysqli_num_rows($result) > 0) {
     echo "No testimonials found.";
 }
 
-// Close the database connection
 mysqli_close($conn);
 ?>
         </div>
-        <!--<div>
-        <h2>Add Your Testimonial</h2>
-        <p>Share your own experience with Chucks's Picante:</p>
-    <form method="post" action="submit-testimonial.php">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" required>
-        <label for="email">Email:</label>
-        <input type="email" name="email" id="email" required>
-        <label for="message">Message:</label>
-        <textarea name="message" id="message" required></textarea>
-        <button type="submit">Submit</button>
-    </form>
-</div>-->
+
 </main> 
 
 <section class="footer">
