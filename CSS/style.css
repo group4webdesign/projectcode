@@ -19,37 +19,37 @@
     color: black;
 } */
 nav {
-    height: 80px;
+    height: 25%;
     width: 100%;
     background: #db4c4c;;
   }
   
   label.logo {
-    font-size: 35px;
+    font-size: 12%;
     font-weight: bold;
     color: white;
     padding: 0 100px;
-    line-height: 80px;
+    line-height: 12%;
   }
   
   nav ul {
     float: right;
-    margin-right: 40px;
+    margin-right: 5%;
   }
   
   nav li {
     display: inline-block;
     margin: 0 8px;
-    line-height: 80px;
+    line-height: 8%;
   }
   
   nav a {
     color: white;
-    font-size: 14px;
+    font-size: 12%;
     text-transform: uppercase;
     border: 1px solid transparent;
     padding: 7px 10px;
-    border-radius: 3px;
+    border-radius: 3%;
   }
   
   a.active,a:hover {
@@ -59,8 +59,8 @@ nav {
   
   nav #icon{
     color: white;
-    font-size: 30px;
-    line-height: 80px;
+    font-size: 14%;
+    line-height: 12%;
     float: right;
     margin-right: 5px;
     cursor: pointer;
